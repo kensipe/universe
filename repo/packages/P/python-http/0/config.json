@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "properties": {
+    "python": {
+      "properties": {
+        "name": {
+          "default": "python-http",
+          "description": "Name for this Nginx instance",
+          "type": "string"
+        }
+      },
+      "required": ["name"],
+      "type": "object"
+    }
+  },
+  "type": "object"
+}

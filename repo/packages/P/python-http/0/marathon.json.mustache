@@ -1,0 +1,29 @@
+{
+  "id": "/{{python.name}}",
+  "cmd": "echo $(curl ifconfig.co) > ip.txt && python -m SimpleHTTPServer 80",
+  "cpus": 1,
+  "mem": 128,
+  "disk": 0,
+  "instances": 1,
+  "acceptedResourceRoles": [
+    "slave_public"
+  ],
+  "container": {
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "{{resource.assets.container.docker.python-docker}}",
+      "network": "HOST",
+      "privileged": false,
+      "parameters": [],
+      "forcePullImage": false
+    }
+  },
+  "portDefinitions": [
+    {
+      "port": 80,
+      "protocol": "tcp",
+      "labels": {}
+    }
+  ]
+}

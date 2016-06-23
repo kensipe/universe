@@ -1,0 +1,18 @@
+{
+  "packagingVersion": "2.0",
+  "name": "python-http",
+  "version": "1.0.0",
+  "scm": "http://hg.nginx.org/nginx/",
+  "description": "python package",
+  "maintainer": "support@mesosphere.com",
+  "tags": ["python"],
+  "preInstallNotes": "Preparing to install python http.",
+  "postInstallNotes": "Python http is getting installed.",
+  "postUninstallNotes": "Python http is uninstalled successfully.",
+  "licenses": [
+    {
+      "name": "BSD like",
+      "url": "http://nginx.org/LICENSE"
+    }
+  ]
+}
